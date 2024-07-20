@@ -1,4 +1,4 @@
-# Итоговый дипломный проект FILMAN
+# Итоговый дипломный проект [FILMAN](https://moraksu.github.io/Filman_React/)
 
 Проект создан с помощью [Create React App](https://github.com/facebook/create-react-app).
 
