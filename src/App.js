@@ -9,7 +9,7 @@ const App = () => (
   <Provider store={store}>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Filman_React" element={<Home />} />
         {/* Add other routes here */}
       </Routes>
     </Router>
