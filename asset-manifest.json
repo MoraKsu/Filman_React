@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Filman_React/static/css/main.b5b857d0.css",
+    "main.js": "/Filman_React/static/js/main.7b03d74b.js",
+    "static/media/news2.jpg": "/Filman_React/static/media/news2.007c571abad702e463e9.jpg",
+    "static/media/news1.jpg": "/Filman_React/static/media/news1.6d45830ad01409220826.jpg",
+    "static/media/news3.jpg": "/Filman_React/static/media/news3.43ed35bf2b9a06745d85.jpg",
+    "static/media/registration_bg1.png": "/Filman_React/static/media/registration_bg1.4232fd0d83e97011a322.png",
+    "static/media/registration_bg3.png": "/Filman_React/static/media/registration_bg3.270db44550f7617ef8f3.png",
+    "static/media/registration_bg2.png": "/Filman_React/static/media/registration_bg2.f16e5640a2061110e7d9.png",
+    "static/media/registration_bg4.png": "/Filman_React/static/media/registration_bg4.b4e7b42c8e01948f9584.png",
+    "static/media/logo.png": "/Filman_React/static/media/logo.50b94c56a5f0e2e026e0.png",
+    "index.html": "/Filman_React/index.html",
+    "static/media/Search.svg": "/Filman_React/static/media/Search.a31e5ed9a490cb97552cf137499a78e1.svg",
+    "main.b5b857d0.css.map": "/Filman_React/static/css/main.b5b857d0.css.map",
+    "main.7b03d74b.js.map": "/Filman_React/static/js/main.7b03d74b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5b857d0.css",
+    "static/js/main.7b03d74b.js"
+  ]
+}
