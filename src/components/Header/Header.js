@@ -133,7 +133,7 @@ const Header = () => {
 
   return (
     <header className="header container center">
-      <Link to="/Filman_React">
+      <Link to="/">
         <img src={logo} className="header__logo" alt="Логотип" />
       </Link>
       <nav className="header__nav">

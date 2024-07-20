@@ -85,7 +85,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer__box-soc">
-                    <Link to="/Filman_React" className="footer__logo">
+                    <Link to="/" className="footer__logo">
                         <img src={logo} alt="Логотип" />
                     </Link>
                     <div className="footer__soc">
