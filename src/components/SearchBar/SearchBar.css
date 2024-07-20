@@ -1,0 +1,49 @@
+/* Поисковая строка */
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+
+.search__box {
+    background: var(--green-1);
+    border-radius: 30px;
+    width: 814px;
+    height: 30px;
+    padding: 10px 70px 10px 70px;
+    display: flex;
+    justify-content: space-between
+}
+
+.search__button {
+    border: none;
+    color: white;
+    background: var(--green-1);
+    height: 40px;
+    width: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    float: right;
+}
+
+.search__input {
+    width: 814px;
+    height: 30px;
+    background: var(--green-1);
+    border: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.search__img {
+    width: 24px; 
+    height: 24px;
+}

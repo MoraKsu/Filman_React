@@ -1,0 +1,233 @@
+/* Основной контент */
+
+.content-home .svg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.content-home .svg-right {
+    position: absolute;
+    right: 0;
+}
+
+
+/* Превью карточки популярное */
+.content-home__popular {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-home__txt {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--green-5);
+}
+
+.content-home__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.content-home__wrapper {
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    width: 588px;
+    height: 120px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: height 0.3s, transform 0.3s;
+    background: var(--green-1);
+    z-index: 1;
+}
+
+.content-home__wrapper:hover {
+    height: 332px;
+}
+
+.content-home__img {
+    width: 150px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: width 0.3s, height 0.3s;
+}
+
+.content-home__wrapper:hover .content-home__img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-home__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(47, 53, 56, 0) 0%, #2f3538 97.01%);
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.content-home__rating {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 46px;
+    height: 25px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 16px;
+    background: var(--green-1);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+    transition: width 0.3s, height 0.3s, font-size 0.3s;
+}
+
+.content-home__wrapper:hover .content-home__rating {
+    width: 95px;
+    height: 38px;
+    font-size: 32px;
+}
+
+.content-home__number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background: var(--green-1);
+    z-index: 1;
+}
+
+.content-home__number p {
+    padding-top: 10px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    color: var(--dop-1);
+}
+
+.content-home__box {
+    position: absolute;
+    bottom: 30px;
+    left: 130px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.content-home__wrapper:hover .content-home__box {
+    opacity: 1;
+}
+
+.content-home__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--green-5);
+}
+
+.content-home__desc {
+    display: flex;
+    gap: 5px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--green-5);
+}
+
+.content-home__year,
+.content-home__genre {
+    position: relative;
+}
+
+.content-home__year span::before,
+.content-home__genre span::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--dop-3);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.content-home__likes {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.content-home__btn-like,
+.content-home__btn-dislike {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.content-home__btn-like p,
+.content-home__btn-dislike p {
+    margin-left: 10px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.content-home__btn-like p {
+    color: var(--dop-2);
+}
+
+.content-home__btn-dislike p {
+    color: var(--dop-6);
+}
+
+.content-home__btn-like {
+    color: var(--dop-2);
+}
+
+.content-home__btn-dislike {
+    color: var(--dop-6);
+}
+
+.full-card {
+    height: 332px !important;
+}
+
+.full-card .content-home__img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.full-card .content-home__rating {
+    width: 73px !important;
+    height: 34px !important;
+    font-size: 32px !important;
+}
+
+.full-card .content-home__img {
+    right: 0 !important;
+    left: auto !important;
+}

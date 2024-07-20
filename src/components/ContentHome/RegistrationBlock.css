@@ -1,0 +1,85 @@
+/* Блок регистрации */
+
+.content-home__registr {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.content-home__registr-bg {
+    z-index: -1;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-home__form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px;
+    width: 466px;
+    height: 341px;
+    backdrop-filter: blur(15px);
+    background: rgba(29, 29, 29, 0.85);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-home__counter-user {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 80px;
+    color: var(--dop-2);
+    text-align: center;
+}
+
+.content-home__txt-counter {
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--green-5);
+}
+
+.content-home__txt-btn {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    width: 226px;
+    height: 58px;
+    background: var(--dop-2);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--green-1);
+}
+
+.content-home__txt-btn:hover {
+    background: var(--dop-6);
+}
+
+.content-home__register-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--green-5);
+}
+
+.content-home__register-link span {
+    color: var(--dop-4);
+}
+
+.content-home__register-link:hover {
+    color: var(--dop-3);
+}

@@ -1,0 +1,337 @@
+/* Блок медиа контент */
+.media {
+    position: relative;
+    background-color: var(--green-1);
+    overflow: hidden;
+}
+
+.media__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Карточки Новостей контент */
+.media__news {
+    position: relative;
+    z-index: 1;
+}
+
+.media__news_txt {
+    margin-top: 50px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--green-5);
+}
+
+.media__news_grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 5;
+}
+
+.media__news_box {
+    max-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.media__news_card-link {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    width: 345px;
+    height: 195px;
+    overflow: hidden;
+    text-decoration: none;
+    background: var(--green-1);
+    border: 1px solid var(--green-1);
+    z-index: 2;
+}
+
+.media__news_card-link:hover {
+    border: 1px solid var(--dop-2);
+}
+
+.media__news_img-small {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    transition: filter 0.3s ease;
+}
+
+.media__news_btn-read {
+    position: absolute;
+    width: 164px;
+    height: 42px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: var(--dop-2);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--green-1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.media__news_card-link:hover .media__news_img-small {
+    filter: brightness(0.5) blur(2px);
+}
+
+.media__news_card-link:hover .media__news_btn-read {
+    opacity: 1;
+}
+
+.media__news_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--green-5);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media__news_date {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--green-5);
+}
+
+.media__news_author {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dop-3);
+}
+
+.media__news_desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--green-5);
+    padding-top: 10px;
+    border-top: 1px solid var(--dop-2);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media__news_button-wrapper {
+    margin-left: 20px;
+}
+
+.media__news_btn-show-all {
+    display: flex;
+    border: 1px solid var(--green-1);
+    background: var(--green-1);
+    color: var(--green-5);
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142%;
+    width: 80px;
+    height: 80px;
+}
+
+.media__news_btn-show-all:hover {
+    border: 1px solid var(--dop-4);
+}
+
+/* Карточки Отзывы контент */
+
+.media__forum {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.media__forum_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.media__forum_svg-kov {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.media__forum_txt {
+    margin-top: 50px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--green-5);
+}
+
+.media__forum_grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.media__forum_box {
+    width: 345px;
+    height: 258px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.media__forum_card-link {
+    margin-top: 85px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    background: var(--green-1);
+    border: 1px solid var(--green-1);
+    z-index: 2;
+    transition: border 0.3s ease;
+}
+
+.media__forum_card-content {
+    height: 195px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.media__forum_card-link:hover {
+    border: 1px solid var(--dop-2);
+}
+
+.media__forum_card-link:hover .media__forum_card-content {
+    filter: brightness(0.5) blur(2px);
+}
+
+.media__forum_btn-read {
+    position: absolute;
+    width: 164px;
+    height: 42px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: var(--dop-2);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--green-1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 4;
+}
+
+.media__forum_card-link:hover .media__forum_btn-read {
+    opacity: 1;
+}
+
+.media__forum_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--green-5);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media__forum_date {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--green-5);
+}
+
+.media__forum_author {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dop-3);
+}
+
+.media__forum_desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--green-5);
+    padding-top: 10px;
+    border-top: 1px solid var(--dop-2);
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media__forum_button-wrapper {
+    margin-left: 20px;
+}
+
+.media__forum_btn-show-all {
+    display: flex;
+    border: 1px solid var(--green-1);
+    background: var(--green-1);
+    color: var(--green-5);
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142%;
+    width: 80px;
+    height: 80px;
+}
+
+.media__forum_btn-show-all:hover {
+    border: 1px solid var(--dop-4);
+}

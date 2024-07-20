@@ -1,0 +1,136 @@
+/* Подвал/Футер */
+.footer {
+    position: relative;
+    background: var(--green-0);
+    width: 100%;
+}
+
+.footer__svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.footer__box {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.footer__box-links {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__box-links_left {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer__wrapper {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--green-5);
+}
+
+.footer__wrapper .footer__title:hover {
+    color: var(--dop-7);
+}
+
+.footer__title {
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: var(--green-5);
+}
+
+.footer__items {
+    list-style-type: none;
+}
+
+.footer__item {
+    padding-bottom: 10px;
+}
+.footer__link {
+    color: var(--green-5);
+    font-weight: 400;
+}
+
+.footer__link:hover {
+    color: var(--dop-7);
+}
+
+.footer__box-links_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__search_box {
+    background: rgb(29, 29, 29);
+    border-radius: 30px;
+    display: flex;
+    align-items: center
+}
+
+.footer__search_button {
+    border: none;
+    color: white;
+    border-radius: 50%;
+    background: rgb(29, 29, 29);
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.footer__search_input {
+    width: 250px;
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 10px;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--green-5);
+    line-height: 25px;
+}
+
+.footer__search_img {
+    width: 24px; 
+    height: 24px;
+}
+
+.footer__box-soc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__soc {
+    padding-bottom: 30px;
+    padding-right: 150px;
+}
+.footer__txt {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--green-5);
+}
+.footer__soc_links {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
