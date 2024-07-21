@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Filman_React/static/css/main.b5b857d0.css",
-    "main.js": "/Filman_React/static/js/main.7b03d74b.js",
+    "main.css": "/Filman_React/static/css/main.581fd329.css",
+    "main.js": "/Filman_React/static/js/main.7b1d9f7f.js",
     "static/media/news2.jpg": "/Filman_React/static/media/news2.007c571abad702e463e9.jpg",
     "static/media/news1.jpg": "/Filman_React/static/media/news1.6d45830ad01409220826.jpg",
     "static/media/news3.jpg": "/Filman_React/static/media/news3.43ed35bf2b9a06745d85.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo.png": "/Filman_React/static/media/logo.50b94c56a5f0e2e026e0.png",
     "index.html": "/Filman_React/index.html",
     "static/media/Search.svg": "/Filman_React/static/media/Search.a31e5ed9a490cb97552cf137499a78e1.svg",
-    "main.b5b857d0.css.map": "/Filman_React/static/css/main.b5b857d0.css.map",
-    "main.7b03d74b.js.map": "/Filman_React/static/js/main.7b03d74b.js.map"
+    "main.581fd329.css.map": "/Filman_React/static/css/main.581fd329.css.map",
+    "main.7b1d9f7f.js.map": "/Filman_React/static/js/main.7b1d9f7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5b857d0.css",
-    "static/js/main.7b03d74b.js"
+    "static/css/main.581fd329.css",
+    "static/js/main.7b1d9f7f.js"
   ]
 }
