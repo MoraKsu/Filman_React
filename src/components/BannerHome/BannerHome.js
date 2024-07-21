@@ -46,14 +46,14 @@ const BannerHome = () => {
 
   const moviePoster = movie.poster ? movie.poster.previewUrl : '';
   const movieTitle = movie.name || movie.alternativeName || 'Untitled';
-  const movieRating = movie.rating ? movie.rating.kp : 'N/A';
+  const movieRating = movie.rating ? movie.rating.kp.toFixed(1) : 'N/A';
   const movieCountry = movie.countries ? movie.countries.map(country => country.name).join(', ') : '';
   const movieYear = movie.year;
   const movieGenre = movie.genres ? movie.genres.map(genre => genre.name).join(', ') : '';
   const movieDescription = movie.description || 'No description available';
 
   return (
-    <div className="banner-container container">
+    <div className="banner-container">
       {moviePoster && (
         <img src={moviePoster} alt="Banner" className="banner-image" />
       )}

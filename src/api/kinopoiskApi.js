@@ -22,7 +22,6 @@ export const fetchPopularMovies = async () => {
 export const searchMovies = async (searchParams) => {
   const url = new URL('https://api.kinopoisk.dev/v1.4/movie');
   
-  // Append query parameters
   Object.keys(searchParams).forEach(key => {
     if (Array.isArray(searchParams[key])) {
       searchParams[key].forEach(value => {

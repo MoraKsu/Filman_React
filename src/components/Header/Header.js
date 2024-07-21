@@ -132,7 +132,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header container center">
+    <header className="header">
       <Link to="/">
         <img src={logo} className="header__logo" alt="Логотип" />
       </Link>

@@ -101,7 +101,7 @@ const ContentHome = () => {
                                 )}
                                 <div className="content-home__gradient"></div>
                                 {movie.rating && movie.rating.kp && (
-                                    <div className="content-home__rating" style={{ color: randomColor }}>{movie.rating.kp}</div>
+                                    <div className="content-home__rating" style={{ color: randomColor }}>{movie.rating ? movie.rating.kp.toFixed(1) : 'N/A'}</div>
                                 )}
                                 <div className="content-home__wrap">
                                     <div className="content-home__number">

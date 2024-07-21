@@ -48,12 +48,12 @@
 .header__search_box {
     background: var(--green-1);
     border-radius: 25px;
-    margin-right: 10px;
+    margin-right: 20px;
     display: flex;
 }
 
 .header__search_box.expanded .header__search_input {
-    width: 20vw;
+    width: 30vw;
     padding: 0 6px;
 }
 
@@ -94,9 +94,9 @@
 /* Выпадающее подменю шапки */
 
 .submenu {
-    width: 100%; /* Ensures submenu takes the full width of the parent */
+    width: 100%;
     position: absolute;
-    top: 100%; /* Positions submenu right below the parent */
+    top: 100%;
     left: 0;
     background-color: rgb(47, 53, 56);
     opacity: 0.95;
