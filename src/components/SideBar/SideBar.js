@@ -54,7 +54,7 @@ const SideBar = () => {
         };
     }, []);
     return (
-    <aside className="aside-navbar container">
+    <aside className="aside-navbar">
       <div className="aside-navbar__wrapper">
         <div className="aside-navbar__avatar">
         <Link to="#" className="aside-navbar__link aside-navbar__avatar-link">

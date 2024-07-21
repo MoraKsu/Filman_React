@@ -1,0 +1,18 @@
+.button-up {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background 0.3s ease;
+    z-index: 5;
+    border: 1px solid var(--green-1);
+  }
+  
+  .button-up:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }

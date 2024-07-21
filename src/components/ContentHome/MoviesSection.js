@@ -2,6 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './MoviesSection.css';
 
+const colors = [
+    'var(--dop-1)',
+    'var(--dop-2)',
+    'var(--dop-3)',
+    'var(--dop-4)',
+    'var(--dop-5)',
+    'var(--dop-6)',
+    'var(--dop-7)'
+];
+
+const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
+
 const getRandomItems = (array, numItems) => {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, numItems);
@@ -15,20 +27,25 @@ const MoviesSection = ({ title, movies, link }) => {
             <h2 className="content-home__txt">{title}</h2>
             <div className="content-home__grid-container">
                 <div className="content-home__grid-small">
-                    {randomMovies.map((movie, index) => (
-                        <Link to={link} key={index} className="content-home__wrapper-small">
-                            {movie.poster && movie.poster.previewUrl && (
-                                <img src={movie.poster.previewUrl} alt="Постер" className="content-home__img-small" />
-                            )}
-                            <div className="content-home__gradient"></div>
-                            {movie.rating && movie.rating.kp && (
-                                <div className="content-home__rating-small-card">{movie.rating.kp}</div>
-                            )}
-                            <h4 className="content-home__title-small-card">
-                                {movie.name || movie.alternativeName || 'Untitled'}
-                            </h4>
-                        </Link>
-                    ))}
+                    {randomMovies.map((movie, index) => {
+                        const randomColor = getRandomColor();
+                        return (
+                            <Link to={link} key={index} className="content-home__wrapper-small">
+                                {movie.poster && movie.poster.previewUrl && (
+                                    <img src={movie.poster.previewUrl} alt="Постер" className="content-home__img-small" />
+                                )}
+                                <div className="content-home__gradient"></div>
+                                {movie.rating && movie.rating.kp && (
+                                    <div className="content-home__rating-small-card" style={{ color: randomColor }}>
+                                        {movie.rating ? movie.rating.kp.toFixed(1) : 'N/A'}
+                                    </div>
+                                )}
+                                <h4 className="content-home__title-small-card">
+                                    {movie.name || movie.alternativeName || 'Untitled'}
+                                </h4>
+                            </Link>
+                        );
+                    })}
                 </div>
                 <div className="content-home__button-wrapper">
                     <Link to={link} className="content-home__btn-show-all">Показать всё &#8594;</Link>
